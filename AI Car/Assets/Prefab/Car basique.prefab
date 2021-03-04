@@ -774,7 +774,10 @@ MonoBehaviour:
     m_Bits: 1
   layerObstacle:
     serializedVersion: 2
-    m_Bits: 2048
+    m_Bits: 6144
+  layerJumpDetection:
+    serializedVersion: 2
+    m_Bits: 6144
   rayRange: 2
   offsetJumpRay: {x: 0, y: -3, z: 10}
 --- !u!65 &2040548799517885560
@@ -931,7 +934,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6864597236003176876}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 4, z: 5}
+  m_LocalPosition: {x: 0, y: 4, z: 7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3241437436631293839}

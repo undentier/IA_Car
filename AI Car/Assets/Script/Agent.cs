@@ -35,6 +35,7 @@ public class Agent : MonoBehaviour, IComparable<Agent>
     public Transform rayStart;
     public LayerMask layerMask;
     public LayerMask layerObstacle;
+    public LayerMask layerJumpDetection;
     public float rayRange;
     public Vector3 offsetJumpRay;
     RaycastHit hit;
@@ -66,7 +67,7 @@ public class Agent : MonoBehaviour, IComparable<Agent>
 
         inputs[8] = RaySensor(transform.position + Vector3.up * 0.2f, transform.forward, 3.5f, layerObstacle);
 
-        float hight = RaySensor(rayStart.position, Vector3.down, 1.9f , layerMask);
+        float hight = RaySensor(rayStart.position, Vector3.down, 1.9f , layerJumpDetection);
 
         if (hight > 0)
         {
@@ -76,7 +77,7 @@ public class Agent : MonoBehaviour, IComparable<Agent>
         {
             hight = 0f;
         }
-        
+
         inputs[9] = hight;
     }
     void OutputUpdate()
