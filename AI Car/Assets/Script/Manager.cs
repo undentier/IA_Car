@@ -96,9 +96,9 @@ public class Manager : MonoBehaviour
 
     void Mutate()
     {
-        for (int i = agents.Count/2 ; i < agents.Count; i++)
+        for (int i = agents.Count/5 ; i < agents.Count; i++)
         {
-            agents[i].net.CopyNet(agents[i - (agents.Count / 2)].net);
+            agents[i].net.CopyNet(agents[i - (agents.Count / 5)].net);
             agents[i].net.Mutate(mutation);
             agents[i].SetMutateColor();
         }
