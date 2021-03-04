@@ -38,6 +38,7 @@ public class CarController : MonoBehaviour
     public float hight;
     public float jumpForce = 1000f;
     public bool canJump = true;
+    public float disFromObj;
     #endregion
 
     private void Start()
@@ -82,11 +83,11 @@ public class CarController : MonoBehaviour
     {
         if (canJump)
         {
-            if (hight > 0.25)
+            if (hight > 0.5f)
             {
                 canJump = false;
                 carRb.AddForce(Vector3.up * jumpForce);
-                StartCoroutine(ResetCanJump());
+                //StartCoroutine(ResetCanJump());
             }
         }
         
@@ -120,11 +121,18 @@ public class CarController : MonoBehaviour
             if (canCoro)
             {
                 canCoro = false;
-                yield return new WaitForSeconds(3f);
+                yield return new WaitForSeconds(1f);
                 canJump = true;
                 canCoro = true;
             }
         }
     }
     
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.layer == 0)
+        {
+            canJump = true;
+        }
+    }
 }

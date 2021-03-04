@@ -618,6 +618,7 @@ GameObject:
   - component: {fileID: 6004623907214771793}
   - component: {fileID: 807513149}
   - component: {fileID: 752102841}
+  - component: {fileID: 2040548799517885560}
   m_Layer: 9
   m_Name: Car basique
   m_TagString: Untagged
@@ -725,7 +726,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSteerAngle: 42
-  motoForce: 400
+  motoForce: 100
   wheelFrontLeftCollider: {fileID: 2052158436}
   wheelFrontRightCollider: {fileID: 1075268813}
   wheelRearLeftCollider: {fileID: 1763938944}
@@ -741,6 +742,7 @@ MonoBehaviour:
   hight: 0
   jumpForce: 100000
   canJump: 1
+  disFromObj: 0
 --- !u!114 &752102841
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -756,7 +758,7 @@ MonoBehaviour:
   fitness: 0
   distanceTraveled: 0
   net:
-    layers: 09000000090000000900000003000000
+    layers: 0a0000000a0000000a00000003000000
   inputs: []
   carController: {fileID: 807513149}
   firstMat: {fileID: 2100000, guid: 09da8e68bd9c211409deadf1b79f32e4, type: 2}
@@ -772,9 +774,22 @@ MonoBehaviour:
     m_Bits: 1
   layerObstacle:
     serializedVersion: 2
-    m_Bits: 1
-  rayRange: 4
+    m_Bits: 2048
+  rayRange: 2
   offsetJumpRay: {x: 0, y: -3, z: 10}
+--- !u!65 &2040548799517885560
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2859845687414080821}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.27602586, y: 0.07056242, z: 0.3939478}
+  m_Center: {x: 0.15808107, y: -0.24944696, z: -0.16900297}
 --- !u!1 &4736483906515472378
 GameObject:
   m_ObjectHideFlags: 0
@@ -916,7 +931,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6864597236003176876}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -2.5, z: 5}
+  m_LocalPosition: {x: 0, y: 4, z: 5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3241437436631293839}

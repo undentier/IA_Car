@@ -54,9 +54,9 @@ public class Agent : MonoBehaviour, IComparable<Agent>
 
     void InputUpdate()
     {
-        inputs[0] = RaySensor(transform.position + Vector3.up * 0.2f, transform.forward, 4f, layerMask);
-        inputs[1] = RaySensor(transform.position + Vector3.up * 0.2f, transform.right, 4f, layerMask);
-        inputs[2] = RaySensor(transform.position + Vector3.up * 0.2f, -transform.right, 4f, layerMask);
+        inputs[0] = RaySensor(transform.position + Vector3.up * 0.2f, transform.forward, 3.5f, layerMask);
+        inputs[1] = RaySensor(transform.position + Vector3.up * 0.2f, transform.right, 2.5f, layerMask);
+        inputs[2] = RaySensor(transform.position + Vector3.up * 0.2f, -transform.right, 2.5f, layerMask);
         inputs[3] = RaySensor(transform.position + Vector3.up * 0.2f, transform.forward + transform.right, 2f, layerMask);
         inputs[4] = RaySensor(transform.position + Vector3.up * 0.2f, transform.forward - transform.right, 2f, layerMask);
 
@@ -64,7 +64,20 @@ public class Agent : MonoBehaviour, IComparable<Agent>
         inputs[6] = (float)Math.Tanh(rb.angularVelocity.y * 0.1f);
         inputs[7] = 1f;
 
-        inputs[8] = RaySensor(rayStart.position, Vector3.up, 4f, layerObstacle);
+        inputs[8] = RaySensor(transform.position + Vector3.up * 0.2f, transform.forward, 3.5f, layerObstacle);
+
+        float hight = RaySensor(rayStart.position, Vector3.down, 1.9f , layerMask);
+
+        if (hight > 0)
+        {
+            hight = 1;
+        }
+        else
+        {
+            hight = 0f;
+        }
+        
+        inputs[9] = hight;
     }
     void OutputUpdate()
     {

@@ -1204,6 +1204,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 121693899772924535, guid: ec92e283bec527c4db42daa263fe39b9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 184379026059697067, guid: ec92e283bec527c4db42daa263fe39b9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 442065087632800120, guid: ec92e283bec527c4db42daa263fe39b9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 700858503045925566, guid: ec92e283bec527c4db42daa263fe39b9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 768922014338910903, guid: ec92e283bec527c4db42daa263fe39b9,
         type: 3}
       propertyPath: m_RootOrder
@@ -1222,7 +1242,7 @@ PrefabInstance:
     - target: {fileID: 768922014338910903, guid: ec92e283bec527c4db42daa263fe39b9,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 11.6
+      value: 6.74
       objectReference: {fileID: 0}
     - target: {fileID: 768922014338910903, guid: ec92e283bec527c4db42daa263fe39b9,
         type: 3}
@@ -1259,10 +1279,50 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2098526685593908444, guid: ec92e283bec527c4db42daa263fe39b9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 2213733457765844563, guid: ec92e283bec527c4db42daa263fe39b9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 2970040628735724718, guid: ec92e283bec527c4db42daa263fe39b9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 4965874814577166251, guid: ec92e283bec527c4db42daa263fe39b9,
         type: 3}
       propertyPath: m_Name
       value: Test jump Track
+      objectReference: {fileID: 0}
+    - target: {fileID: 5078335124952714937, guid: ec92e283bec527c4db42daa263fe39b9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 5787684797611261795, guid: ec92e283bec527c4db42daa263fe39b9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 7113676914491338414, guid: ec92e283bec527c4db42daa263fe39b9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 7457304754249481925, guid: ec92e283bec527c4db42daa263fe39b9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 8783732752027773562, guid: ec92e283bec527c4db42daa263fe39b9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec92e283bec527c4db42daa263fe39b9, type: 3}
@@ -1438,7 +1498,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 823
+    m_Bits: 2871
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -2103,7 +2163,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   populationSize: 100
-  trainingDuration: 75
+  trainingDuration: 30
   mutation: 5
   agentPrefab: {fileID: 752102841, guid: 784746c03e025e34499b1d61f364b463, type: 3}
   agentGroup: {fileID: 1233367381}
