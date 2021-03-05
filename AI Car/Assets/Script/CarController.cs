@@ -80,6 +80,7 @@ public class CarController : MonoBehaviour
     }
 
     void Jump()
+
     {
         if (canJump)
         {
@@ -87,6 +88,7 @@ public class CarController : MonoBehaviour
             {
                 canJump = false;
                 carRb.AddForce(Vector3.up * jumpForce);
+                carRb.constraints = RigidbodyConstraints.FreezeRotationY;
             }
         }
         
@@ -132,6 +134,7 @@ public class CarController : MonoBehaviour
         if (other.gameObject.layer == 0)
         {
             canJump = true;
+            carRb.constraints = RigidbodyConstraints.None;
         }
     }
 }
