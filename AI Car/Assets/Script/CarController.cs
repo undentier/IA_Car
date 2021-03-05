@@ -87,7 +87,6 @@ public class CarController : MonoBehaviour
             {
                 canJump = false;
                 carRb.AddForce(Vector3.up * jumpForce);
-                //StartCoroutine(ResetCanJump());
             }
         }
         

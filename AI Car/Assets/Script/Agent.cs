@@ -56,8 +56,8 @@ public class Agent : MonoBehaviour, IComparable<Agent>
     void InputUpdate()
     {
         inputs[0] = RaySensor(transform.position + Vector3.up * 0.2f, transform.forward, 3.5f, layerMask);
-        inputs[1] = RaySensor(transform.position + Vector3.up * 0.2f, transform.right, 2.5f, layerMask);
-        inputs[2] = RaySensor(transform.position + Vector3.up * 0.2f, -transform.right, 2.5f, layerMask);
+        inputs[1] = RaySensor(transform.position + Vector3.up * 0.2f, transform.right, 3.5f, layerMask);
+        inputs[2] = RaySensor(transform.position + Vector3.up * 0.2f, -transform.right, 3.5f, layerMask);
         inputs[3] = RaySensor(transform.position + Vector3.up * 0.2f, transform.forward + transform.right, 2f, layerMask);
         inputs[4] = RaySensor(transform.position + Vector3.up * 0.2f, transform.forward - transform.right, 2f, layerMask);
 
